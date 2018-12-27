@@ -1,0 +1,19 @@
+server:
+  port: 8083
+
+# GZIP
+feign:
+  compression:
+    request:
+      enabled: true
+      mime-types: text/xml,application/xml,application/json
+      min-request-size: 2048
+    response:
+      enabled: true
+  httpclient:
+    enabled: false
+  okhttp:
+    enabled: true
+logging:
+  level:
+    com.walker.feign.service: debug

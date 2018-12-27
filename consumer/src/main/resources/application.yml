@@ -1,0 +1,33 @@
+server:
+  port: 8084
+
+spring:
+  application:
+    name: consumer
+  main:
+    allow-bean-definition-overriding: true
+# GZIP
+feign:
+  compression:
+    request:
+      enabled: true
+      mime-types: text/xml,application/xml,application/json
+      min-request-size: 2048
+    response:
+      enabled: true
+  httpclient:
+    enabled: false
+  okhttp:
+    enabled: true
+logging:
+  level:
+    com.walker.consumer.service: debug
+
+eureka:
+  client:
+    security:
+      basic:
+        user: admin
+        password: 123456
+    service-url:
+      defaultZone: http://${eureka.client.security.basic.user}:${eureka.client.security.basic.password}@localhost:8761/eureka/
