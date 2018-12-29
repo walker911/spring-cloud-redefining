@@ -9,6 +9,7 @@
         <module>hello-feign</module>
         <module>consumer</module>
         <module>provider</module>
+        <module>zuul-server</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
