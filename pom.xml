@@ -10,6 +10,7 @@
         <module>consumer</module>
         <module>provider</module>
         <module>zuul-server</module>
+        <module>assemble-sample</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
