@@ -12,6 +12,7 @@
         <module>zuul-server</module>
         <module>assemble-sample</module>
         <module>consul-sample</module>
+        <module>oauth-gateway-sample</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
