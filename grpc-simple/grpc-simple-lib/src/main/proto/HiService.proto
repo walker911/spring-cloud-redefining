@@ -1,0 +1,16 @@
+syntax = "proto3";
+package com.walker.grpc;
+option java_multiple_files = true;
+option java_generic_services = true;
+message HelloRequest {
+    string name = 1;
+    int32 age = 2;
+    repeated string hobbies = 3;
+    map<string, string> tags = 4;
+}
+message HelloResponse {
+    string greeting = 1;
+}
+service HelloService {
+    rpc Hello (HelloRequest) returns (HelloResponse) {};
+}

@@ -13,6 +13,8 @@
         <module>assemble-sample</module>
         <module>consul-sample</module>
         <module>oauth-gateway-sample</module>
+        <module>grpc-protobuf</module>
+        <module>grpc-simple</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -31,9 +33,6 @@
         <spring-cloud.version>Greenwich.RC2</spring-cloud.version>
     </properties>
 
-    <dependencies>
-    </dependencies>
-
     <dependencyManagement>
         <dependencies>
             <dependency>
@@ -47,12 +46,12 @@
     </dependencyManagement>
 
     <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-        </plugins>
+        <!--<plugins>-->
+            <!--<plugin>-->
+                <!--<groupId>org.springframework.boot</groupId>-->
+                <!--<artifactId>spring-boot-maven-plugin</artifactId>-->
+            <!--</plugin>-->
+        <!--</plugins>-->
     </build>
 
     <repositories>
