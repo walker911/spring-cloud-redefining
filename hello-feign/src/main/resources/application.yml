@@ -17,3 +17,15 @@ feign:
 logging:
   level:
     com.walker.feign.service: debug
+spring:
+  application:
+    name: feign-test
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.cloud.client.ip-address}:${server.port}
+    lease-expiration-duration-in-seconds: 10
+    lease-renewal-interval-in-seconds: 5
